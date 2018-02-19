@@ -1,7 +1,7 @@
 /*Create your own version of the String class. Call it MyString. This class 
 should be immutable. Make sure to encapsulate your data properly. Write your
 own code. Don't turn this into a wrapper class for the String class.
-Provide an implementation for the following methods.:
+Provide an implementation for the following methods:
 
 public MyString(char[] chars);
 public char charAt(int index);
