@@ -13,11 +13,12 @@ public final class MyString
 	    public int length() {
 	        return value.length;
 	    }
+	    
 
 		@Override
-		public char charAt(int arg0) {
+		public char charAt(int index) {
 			// TODO Auto-generated method stub
-			return 0;
+			return value[index];
 		}
 
 		@Override
