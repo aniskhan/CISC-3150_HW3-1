@@ -29,7 +29,7 @@ public class Main {
 		char data[] = {'a', 'b', 'c', 'd','e'};
 		MyString someStr = new MyString(data);
 		System.out.println(someStr.length());
-		System.out.println(someStr.charAt(2));
+		System.out.println(someStr.charAt(-2));
 	}
 
 }

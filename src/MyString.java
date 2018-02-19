@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.lang.IndexOutOfBoundsException;
 
 public final class MyString
 	implements java.io.Serializable, CharSequence {
@@ -10,14 +11,15 @@ public final class MyString
 	    public MyString(char value[]) {
 	        this.value = Arrays.copyOf(value, value.length);
 	    }
+	    
 	    public int length() {
 	        return value.length;
 	    }
 	    
-
-		@Override
 		public char charAt(int index) {
-			// TODO Auto-generated method stub
+			if (index <0 || index > value.length) {
+				throw new IndexOutOfBoundsException();
+			}
 			return value[index];
 		}
 
