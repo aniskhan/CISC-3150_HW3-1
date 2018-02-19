@@ -1,7 +1,7 @@
 import java.io.ObjectStreamField;
 
 public final class MyString
-	implements java.io.Serializable, Comparable<String>, CharSequence {
+	implements java.io.Serializable, Comparable<MyString>, CharSequence {
 	    /** The value is used for character storage. */
 	    private char value[];
 
@@ -64,8 +64,9 @@ public final class MyString
 			return null;
 		}
 
+
 		@Override
-		public int compareTo(String arg0) {
+		public int compareTo(MyString o) {
 			// TODO Auto-generated method stub
 			return 0;
 		}
