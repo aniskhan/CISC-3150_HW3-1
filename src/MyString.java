@@ -3,7 +3,7 @@ import java.io.ObjectStreamField;
 public final class MyString
 	implements java.io.Serializable, Comparable<String>, CharSequence {
 	    /** The value is used for character storage. */
-	    private final char value[];
+	    private char value[];
 
 	    /** Cache the hash code for the string */
 	    private int hash; // Default to 0
