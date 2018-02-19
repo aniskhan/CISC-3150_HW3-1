@@ -26,9 +26,9 @@ Make sure to provide a driver class, too, and show the output.
 public class Main {
 
 	public static void main(String[] args) {
-		// testing commit from eclipse
-		// another test commit
-
+		char data[] = {'a', 'b', 'c', 'd'};
+		MyString someStr = new MyString(data);
+		System.out.println(someStr.length());
 	}
 
 }
