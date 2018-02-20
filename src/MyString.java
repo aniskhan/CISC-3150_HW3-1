@@ -22,7 +22,12 @@ public final class MyString
 			}
 			return value[index];
 		}
-
+		
+		public MyString substring(int begin, int end) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
 		@Override
 		public CharSequence subSequence(int arg0, int arg1) {
 			// TODO Auto-generated method stub
