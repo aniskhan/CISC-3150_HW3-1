@@ -28,6 +28,17 @@ public final class MyString
 			return null;
 		}
 		
+	    
+	    public String toString() {
+	    	//modified from http://javadevnotes.com/java-array-to-string
+	    	StringBuilder sb = new StringBuilder();
+	        for (int i = 0; i < value.length; i++) {
+	           char item = value[i];
+	           sb.append(item);
+	        }
+	        return sb.toString();	
+	    }
+
 		@Override
 		public CharSequence subSequence(int arg0, int arg1) {
 			// TODO Auto-generated method stub
