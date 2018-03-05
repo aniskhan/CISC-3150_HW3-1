@@ -23,9 +23,16 @@ public final class MyString
 			return value[index];
 		}
 		
-		public MyString substring(int begin, int end) {
-			// TODO Auto-generated method stub
-			return null;
+		public String substring(int begin, int end) {
+			if (begin < 0 || end > value.length || end < begin) {
+				throw new IndexOutOfBoundsException();
+			}
+	    	StringBuilder sb = new StringBuilder();
+	        for (int i = begin; i < end; i++) {
+	           char item = value[i];
+	           sb.append(item);
+	        }
+	        return sb.toString();
 		}
 		
 	    

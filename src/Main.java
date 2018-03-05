@@ -31,6 +31,7 @@ public class Main {
 		System.out.println(someStr.length());
 		System.out.println(someStr.charAt(2));
 		System.out.println(someStr.toString());
+		System.out.println(someStr.substring(2, 4));
 	}
 
 }
