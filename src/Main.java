@@ -32,6 +32,7 @@ public class Main {
 		System.out.println(someStr.charAt(2));
 		System.out.println(someStr.toString());
 		System.out.println(someStr.substring(2, 4));
+		System.out.println(someStr.substring(1, 3).toString());
 	}
 
 }

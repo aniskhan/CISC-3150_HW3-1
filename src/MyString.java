@@ -23,19 +23,20 @@ public final class MyString
 			return value[index];
 		}
 		
-		public String substring(int begin, int end) {
+		public MyString substring(int begin, int end) {
 			if (begin < 0 || end > value.length || end < begin) {
 				throw new IndexOutOfBoundsException();
 			}
-	    	StringBuilder sb = new StringBuilder();
-	        for (int i = begin; i < end; i++) {
-	           char item = value[i];
-	           sb.append(item);
-	        }
-	        return sb.toString();
+			char[] subMyString = new char [end-begin];
+			int n = 0; // new array has zero index!
+			for (int i = begin; i < end; i++) {
+		        subMyString[n] = value[i];
+		        n++;
+			}
+			return new MyString(subMyString);
 		}
 		
-	    
+
 	    public String toString() {
 	    	//modified from http://javadevnotes.com/java-array-to-string
 	    	StringBuilder sb = new StringBuilder();
