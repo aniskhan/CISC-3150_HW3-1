@@ -73,7 +73,9 @@ public final class MyString
 	    	}
 			return 0;
 	    }
-	    
+	    public MyString getMyString() {
+	    	return null;  //undone... I can't do this anymore!
+	    }
 	    public static MyString valueOf(int i) { // don't understand the ask
 	    	return null;
 	    }
