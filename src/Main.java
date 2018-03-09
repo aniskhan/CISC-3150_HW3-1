@@ -27,14 +27,17 @@ public class Main {
 
 	public static void main(String[] args) {
 		char data[] = {'a', 'b', 'c', 'd', '1'};
+		char data2[] = {'a', 'b', 'c', 'd', '1'};
 		MyString someStr = new MyString(data);
+		MyString someStr2 = new MyString(data2);
 		System.out.println(someStr.length());
 		System.out.println(someStr.charAt(2));
 		System.out.println(someStr.toString());
 		System.out.println(someStr.substring(2, 4));
-		System.out.println(someStr.substring(1, 3).toString());
+		System.out.println(someStr.substring(1, 3).toUpperCase());
 		System.out.println(someStr.toUpperCase());
 		System.out.println(someStr.toLowerCase());
+		System.out.println(someStr.compareTo(someStr2));
 	}
 
 }

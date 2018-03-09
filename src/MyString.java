@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.lang.IndexOutOfBoundsException;
 
 public final class MyString
-	implements java.io.Serializable, CharSequence {
+	implements java.io.Serializable {
 
 	private static final long serialVersionUID = 1L;
 		/** The value is used for character storage. */
@@ -62,14 +62,20 @@ public final class MyString
 	    	}
 	    	return new MyString(lowerMyString);
 	    }
+	    public int compareTo(MyString s){
+	    	if (value.length == s.value.length) {
+	    		for (int i = 0; i < value.length; i++) {
+	    	    	if (value[i] != s.value[i]) {
+	    	    		return 0;
+	    	       	}
+	    		}
+	    		return 1;
+	    	}
+			return 0;
+	    }
 	    
-		@Override
-		public CharSequence subSequence(int arg0, int arg1) {
-			// TODO Auto-generated method stub
-			return null;
-		}
-
-
-
+	    public static MyString valueOf(int i) { // don't understand the ask
+	    	return null;
+	    }
 }
 	
