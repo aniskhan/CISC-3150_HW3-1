@@ -26,13 +26,15 @@ Make sure to provide a driver class, too, and show the output.
 public class Main {
 
 	public static void main(String[] args) {
-		char data[] = {'a', 'b', 'c', 'd'};
+		char data[] = {'a', 'b', 'c', 'd', '1'};
 		MyString someStr = new MyString(data);
 		System.out.println(someStr.length());
 		System.out.println(someStr.charAt(2));
 		System.out.println(someStr.toString());
 		System.out.println(someStr.substring(2, 4));
 		System.out.println(someStr.substring(1, 3).toString());
+		System.out.println(someStr.toUpperCase());
+		System.out.println(someStr.toLowerCase());
 	}
 
 }

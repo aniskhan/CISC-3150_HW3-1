@@ -36,7 +36,6 @@ public final class MyString
 			return new MyString(subMyString);
 		}
 		
-
 	    public String toString() {
 	    	//modified from http://javadevnotes.com/java-array-to-string
 	    	StringBuilder sb = new StringBuilder();
@@ -46,7 +45,24 @@ public final class MyString
 	        }
 	        return sb.toString();	
 	    }
-
+	    
+	    public MyString toUpperCase() {
+	    	char[] upperMyString = new char [value.length];
+	    	this.value = Arrays.copyOf(value, value.length);
+	    	for (int i = 0; i < value.length; i++) {
+	    		upperMyString[i] = Character.toUpperCase(value[i]);
+	    	}
+	    	return new MyString(upperMyString);
+	    }
+	    public MyString toLowerCase() {
+	    	char[] lowerMyString = new char [value.length];
+	    	this.value = Arrays.copyOf(value, value.length);
+	    	for (int i = 0; i < value.length; i++) {
+	    		lowerMyString[i] = Character.toLowerCase(value[i]);
+	    	}
+	    	return new MyString(lowerMyString);
+	    }
+	    
 		@Override
 		public CharSequence subSequence(int arg0, int arg1) {
 			// TODO Auto-generated method stub
