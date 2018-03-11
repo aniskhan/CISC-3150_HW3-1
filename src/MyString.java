@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.lang.IndexOutOfBoundsException;
+import java.lang.UnsupportedOperationException;
 
 public final class MyString
 	implements java.io.Serializable {
@@ -74,10 +75,11 @@ public final class MyString
 			return 0;
 	    }
 	    public MyString getMyString() {
-	    	return null;  //undone... I can't do this anymore!
+	    	throw new UnsupportedOperationException("Not yet implemented");  
+	    	//undone... I can't do this anymore!
 	    }
 	    public static MyString valueOf(int i) { // don't understand the ask
-	    	return null;
+	    	throw new UnsupportedOperationException("Not yet implemented"); 
 	    }
 }
 	

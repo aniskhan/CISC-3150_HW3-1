@@ -38,6 +38,7 @@ public class Main {
 		System.out.println(someStr.toUpperCase());
 		System.out.println(someStr.toLowerCase());
 		System.out.println(someStr.compareTo(someStr2));
+		System.out.println(someStr.getMyString());
 	}
 
 }
